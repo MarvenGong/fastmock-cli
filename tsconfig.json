@@ -1,0 +1,23 @@
+{
+  "skipProject": false,
+  "allowJs": true,
+  "files": ["src/bin/cli.ts"],
+  // 仅转译，不做类型检查
+  "transpileOnly": true,
+  // 自定义编译选项
+  "compilerOptions": {
+    "strict": false,
+    "outDir": "dist",
+    "target": "es2017",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "declaration": false,
+    "removeComments": false,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "importHelpers": false,
+    // 转换 js，支持在 ytt.config.js 里使用最新语法
+    "allowJs": true,
+    "lib": ["es2017"],
+  },
+}
